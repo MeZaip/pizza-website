@@ -14,6 +14,7 @@
     top:-100px;
     transition:0.3s;
     width:100%;
+    z-index:5;
 }
 .sectiunea-1{
     height:100vh;
@@ -127,13 +128,12 @@
     display:block;
 }
 .product-title{
-    font-size:50px;
+    font-size:2.5vw;
     display:flex;
     justify-content: center;
 }
 .product-text{
-    padding-left: 20px;
-    padding-right: 20px;
+    border-bottom: 4px solid black;
 }
 .pret{
     text-align: right;
@@ -189,15 +189,17 @@
   }
 .ingrediente{
     font-family:'Heebo', sans-serif;
+    font-size:2vw;
 }
 .footer_product{
     font-family:'Heebo', sans-serif;
+    display:flex;
 }
   .content span {
     font-size: 24px;
     display: block;
   }
-  .overlay {
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -207,7 +209,53 @@
     height: 0;
     transition: 0.5s ease;
     overflow: hidden;
+    border-color: 5px black;
   }
   .wrapper:hover .overlay {
     height: 100%;
   }
+.addtocartbtndiv{
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    text-align:center;
+    -ms-transform: translateX(+50%);
+    transform: translateX(+10%);
+    background-color:rgb(255, 255, 255);
+    border-radius:15px;
+    border: 2px solid black;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    display:inline;
+
+}
+.addto-button{
+    font-size:2.2vw;
+    margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius:10px;
+    transition: 0.13s;
+    border:0px solid white;
+}
+.addto-button:hover{
+    background-color:rgb(208,109,54);
+    color:white;
+    transition: 0.13s;
+}
+.ingrediente-text{
+    font-family:'Heebo', sans-serif;
+    padding-left:5px;
+}
+.shopping_cart{
+    background-color:white;
+    border-radius:20px;
+    display:flex;
+    flex-direction: column;
+    white-space:nowrap;
+}
+.test1{
+    white-space:nowrap;
+    display:flex;
+    flex-direction: column;
+}
