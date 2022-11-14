@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="header_static" class="header_static">
@@ -32,271 +38,285 @@
           </nav>
         </div>
       </div>
+      <div class="produse">
+        <nav>
+          <button class="produse-cell" id="pizza">Pizza</button>
+          <button class="produse-cell" id="oferte">Oferte</button>
+          <button class="produse-cell" id="antreuri">Antreuri</button>
+          <button class="produse-cell" id="paste">Paste</button>
+          <button class="produse-cell" id="bauturi">Bauturi</button>
+        </nav>
+      </div>
     </header>
     <div id="sectiunea-2" class="sectiunea-2">
-      <div class="product-list-grid">
-        <div class="product-group">
-          <div class="modal" id="modal">
-            <div class="modal-container-1">
-              <div class="modal-image">
-                <img src="images/pizza-1.jpg" width="500" alt="" />
-              </div>
-              <div class="modal-text">
-                <div class="modal-title"><h1>Pizza Rocket</h1></div>
-                <div class="modal-descriere">
-                  <p>Ingrediente: salam , mozzarella, parmezan, sos de rosii</p>
-                  <label class="container"
-                    >One
-                    <input type="radio" checked="checked" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="container"
-                    >Two
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <label class="container"
-                    >Three
-                    <input type="radio" name="radio" />
-                    <span class="checkmark"></span>
-                  </label>
+      <div class="pizza" id="pizzameniu">
+        <div class="product-list-grid">
+          <div class="product-group">
+            <div class="modal" id="modal">
+              <div class="modal-container-1">
+                <div class="modal-image">
+                  <img src="images/pizza-1.jpg" width="500" alt="" />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Rocket</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-1.jpg"
-                alt="pizza rocket"
-              />
-            </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                <div class="modal-text">
+                  <div class="modal-title"><h1>Pizza Rocket</h1></div>
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
+                    <label class="container"
+                      >Mica - Ø 10cm - 25 lei
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"
+                      >Medie - Ø 11cm - 50 lei
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"
+                      >Mare - Ø 2cm - 69 lei
+                      <input type="radio" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
-                  </div>
+                  <div class="adaugaincos"><button>Adauga in cos</button></div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Chippy</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-2.png"
-                alt="pizza chippy"
-              />
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Rocket</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-1.jpg"
+                  alt="pizza rocket"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Famiglia</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-3.jpg"
-                alt="pizza famiglia"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Chippy</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-2.png"
+                  alt="pizza chippy"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Vegetaria</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-4.jpg"
-                alt="pizza vegetariana"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Famiglia</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-3.jpg"
+                  alt="pizza famiglia"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Diavola</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-5.jpg"
-                alt="pizza diavola"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Vegetaria</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-4.jpg"
+                  alt="pizza vegetariana"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Rosso</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-6.jpg"
-                alt="pizza rosso"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Diavola</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-5.jpg"
+                  alt="pizza diavola"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Quattro Formaggi</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-7.jpg"
-                alt="pizza Quattro Formaggi"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Rosso</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-6.jpg"
+                  alt="pizza rosso"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
                   </div>
-                </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Vezi detalii
-                    </button>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="product-group">
-          <div class="product-text">
-            <div class="product-title"><p>Pizza Del Paese</p></div>
-          </div>
-          <div class="wrapper">
-            <div class="img_group_pizza">
-              <img
-                class="img_pizza"
-                src="images/pizza-8.jpg"
-                alt="pizza del paese"
-              />
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Quattro Formaggi</p></div>
             </div>
-            <div class="overlay">
-              <div class="content">
-                <div class="ingrediente">
-                  <div class="ingrediente-text">
-                    Ingrediente: salam , mozzarella, parmezan, sos de rosii
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-7.jpg"
+                  alt="pizza Quattro Formaggi"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
+                  </div>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div class="footer_product">
-                  <div class="addtocartbtndiv">
-                    <button class="addto-button" id="addtocartbtn">
-                      Adauga in cos
-                    </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Pizza Del Paese</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/pizza-8.jpg"
+                  alt="pizza del paese"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="ingrediente">
+                    <div class="ingrediente-text">
+                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    </div>
+                  </div>
+                  <div class="footer_product">
+                    <div class="addtocartbtndiv">
+                      <button class="addto-button" id="addtocartbtn">
+                        Vezi detalii
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -304,6 +324,10 @@
           </div>
         </div>
       </div>
+      <div class="oferte" id="ofertemeniu">a</div>
+      <div class="antreuri" id="antreurimeniu">b</div>
+      <div class="paste" id="pastemeniu">c</div>
+      <div class="bauturi" id="bauturimeniu">d</div>
     </div>
   </body>
 </html>
