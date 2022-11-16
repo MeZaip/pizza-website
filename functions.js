@@ -28,28 +28,44 @@ const pastebutton=document.getElementById('paste')
 const bauturimeniu=document.getElementById('bauturimeniu')
 const bautuributton=document.getElementById('bauturi')
 let current=document.getElementById('pizzameniu')
+let currentbtn=pizzabutton;
 pizzabutton.onclick=function() {
   current.style.display="none";
-  pizzameniu.style.display="block";
+  pizzameniu.style.display="block";  
+  currentbtn.style.background="none";
+  pizzabutton.style.backgroundColor="#ccc";
+  currentbtn=pizzabutton;
   current=pizzameniu;
 }
 ofertebutton.onclick=function(){
   current.style.display="none";
   ofertemeniu.style.display="block";
+  currentbtn.style.background="none";
+  ofertebutton.style.backgroundColor="#ccc";
+  currentbtn=ofertebutton;
   current=ofertemeniu;
 }
 antreuributton.onclick=function() {
   current.style.display="none";
   antreurimeniu.style.display="block";
+  currentbtn.style.background="none";
+  antreuributton.style.backgroundColor="#ccc";
+  currentbtn=antreuributton;
   current=antreurimeniu;
 }
 pastebutton.onclick=function(){
   current.style.display="none";
   pastemeniu.style.display="block";
+  currentbtn.style.background="none";
+  pastebutton.style.backgroundColor="#ccc";
+  currentbtn=pastebutton;
   current=pastemeniu;
 }
 bautuributton.onclick=function(){
   current.style.display="none";
   bauturimeniu.style.display="block";
+  currentbtn.style.background="none";
+  bautuributton.style.backgroundColor="#ccc";
+  currentbtn=bautuributton;
   current=bauturimeniu;
 }
