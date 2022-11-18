@@ -33,17 +33,16 @@
         </a>
         <div class="navbar">
           <nav>
-            <a class="navbar" href="index.html">Start</a>
-            <a class="navbar" href="meniu.html">Meniu</a>
-            <a class="navbar" href="contact.html">Contact</a>
-            <a class="navbar" id="cart" href="cart.html">🛒 Vezi cosul</a>
+            <a class="navbar buton-cos" id="cart">
+              <span class="buton-cos-scris">VEZI COSUL</span
+              ><span class="cartemoji">🛒</span></a
+            >
           </nav>
         </div>
       </div>
       <div class="produse">
         <nav>
           <button class="produse-cell" id="pizza">Pizza</button>
-          <button class="produse-cell" id="oferte">Oferte</button>
           <button class="produse-cell" id="antreuri">Antreuri</button>
           <button class="produse-cell" id="paste">Paste</button>
           <button class="produse-cell" id="bauturi">Bauturi</button>
@@ -54,60 +53,54 @@
       <div class="pizza" id="pizzameniu">
         <div class="product-list-grid">
           <div class="product-group">
-            <div class="modal" id="modal">
-              <div class="modal-container-1">
-                <div class="modal-image">
-                  <img src="images/pizza-1.jpg" width="500" alt="" />
-                </div>
-                <div class="modal-text">
-                  <div class="modal-title"><h1>Pizza Rocket</h1></div>
+            <div class="product-text">Pizza Rocket</div>
+            <div class="wrapper">
+              <img
+                class="img_pizza img_group_pizza"
+                src="images/pizza-1.jpg"
+                alt="pizza rocket"
+              />
+              <div class="overlay">
+                <div class="content">
                   <div class="modal-descriere">
                     <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                    <label class="container"
-                      >Mica - Ø 10cm - 25 lei
-                      <input type="radio" checked="checked" name="radio" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="container"
-                      >Medie - Ø 11cm - 420 lei
-                      <input type="radio" name="radio" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="container"
-                      >Mare - Ø 69cm - 420 lei
-                      <input type="radio" name="radio" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <div class="adaugaincos"><button>Adauga in cos</button></div>
-                </div>
-              </div>
-            </div>
-            <div class="product-text">
-              <div class="product-title"><p>Pizza Rocket</p></div>
-            </div>
-            <div class="wrapper">
-              <div class="img_group_pizza">
-                <img
-                  class="img_pizza"
-                  src="images/pizza-1.jpg"
-                  alt="pizza rocket"
-                />
-              </div>
-              <div class="overlay">
-                <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Speciala - 69 cm</span>
+                      <span class="pretpizza">420 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -128,16 +121,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -158,16 +171,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -188,16 +221,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -218,16 +271,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -248,16 +321,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -278,16 +371,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -308,16 +421,36 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
+                  <div class="modal-descriere">
+                    <div>
                       Ingrediente: salam , mozzarella, parmezan, sos de rosii
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Vezi detalii
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 30 cm</span
+                      ><span class="pretpizza">22 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 38 cm</span>
+                      <span class="pretpizza">34 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 50 cm</span>
+                      <span class="pretpizza">52 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -326,7 +459,6 @@
           </div>
         </div>
       </div>
-      <div class="oferte" id="ofertemeniu">a</div>
       <div class="antreuri" id="antreurimeniu">
         <div class="product-list-grid">
           <div class="product-group">
@@ -343,11 +475,33 @@
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                  <div class="modal-descriere">
+                    <div class="container">
+                      <span class="info-dimensiune">Mica - 150g</span
+                      ><span class="pretpizza">5.5 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Medie - 300g</span>
+                      <span class="pretpizza">11 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Mare - 500g</span>
+                      <span class="pretpizza">16 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -356,24 +510,31 @@
           </div>
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Salata 1</p></div>
+              <div class="product-title"><p>Salata Chicineta</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/salata1.jpg" alt="salata1" />
+                <img
+                  class="img_pizza"
+                  src="images/salata1.jpg"
+                  alt="salatachicineta"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: oua, rosii, porumb, ceapa, varza rosie,
+                      salata, sunca
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 450g</span
+                      ><span class="pretpizza">25 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -382,24 +543,31 @@
           </div>
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Salata 2</p></div>
+              <div class="product-title"><p>Salata Chupy-Chup</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/salata2.jpg" alt="salata2" />
+                <img
+                  class="img_pizza"
+                  src="images/salata2.jpg"
+                  alt="salatachupychup"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: paine prajita, carne, salata, maioneza, ardei
+                      copt
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200 g</span
+                      ><span class="pretpizza">15 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -408,24 +576,31 @@
           </div>
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Salata 3</p></div>
+              <div class="product-title"><p>Salata Cezar</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/salata3.jpg" alt="salata3" />
+                <img
+                  class="img_pizza"
+                  src="images/salata3.jpg"
+                  alt="salatacezar"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: rosii cherry, salata, carne de pui, maioneza,
+                      ardei
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200g</span
+                      ><span class="pretpizza">15 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -438,20 +613,27 @@
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/salata4.jpg" alt="salata4" />
+                <img
+                  class="img_pizza"
+                  src="images/salata4.jpg"
+                  alt="salatavegetariana"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: salata, ridichii, castraveti, ceapa, usturoi,
+                      lipie
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 300g</span
+                      ><span class="pretpizza">18 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -464,24 +646,28 @@
         <div class="product-list-grid">
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Pasta 1</p></div>
+              <div class="product-title"><p>Paste Bolognese</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/paste1.jpg" alt="pasta1" />
+                <img
+                  class="img_pizza"
+                  src="images/paste1.jpg"
+                  alt="pastebolognese"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
-                    </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                  <div class="modal-descriere">
+                    <div>Ingrediente: paste, carne tocata, sos de rosii</div>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200 g</span
+                      ><span class="pretpizza">14 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -490,24 +676,31 @@
           </div>
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Pasta 2</p></div>
+              <div class="product-title"><p>Paste Da Casa</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/paste2.jpg" alt="paste2" />
+                <img
+                  class="img_pizza"
+                  src="images/paste2.jpg"
+                  alt="pastadacasa"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: paste de casa, carne tocata, ceapa calita,
+                      sos de rosii, patrunjel
                     </div>
-                  </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200 g</span
+                      ><span class="pretpizza">14 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -516,24 +709,63 @@
           </div>
           <div class="product-group">
             <div class="product-text">
-              <div class="product-title"><p>Paste 3</p></div>
+              <div class="product-title"><p>Paste Buona Carne</p></div>
             </div>
             <div class="wrapper">
               <div class="img_group_pizza">
-                <img class="img_pizza" src="images/paste3.jpg" alt="paste3" />
+                <img
+                  class="img_pizza"
+                  src="images/paste3.jpg"
+                  alt="pastebuonacarne"
+                />
               </div>
               <div class="overlay">
                 <div class="content">
-                  <div class="ingrediente">
-                    <div class="ingrediente-text">
-                      Ingrediente: salam , mozzarella, parmezan, sos de rosii
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: carne fiarta, paste, ardei, rosii, porumb,
+                      ceapa, salata
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200 g</span
+                      ><span class="pretpizza">14 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
-                  <div class="footer_product">
-                    <div class="addtocartbtndiv">
-                      <button class="addto-button" id="addtocartbtn">
-                        Adauga in cos
-                      </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Paste Carbonara</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/carbonara.jpg"
+                  alt="pastecarbonara"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="modal-descriere">
+                    <div>
+                      Ingrediente: paste, parmezan, piper, oua, carne de porc
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">Portie Rocket - 200 g</span
+                      ><span class="pretpizza">14 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -542,7 +774,189 @@
           </div>
         </div>
       </div>
-      <div class="bauturi" id="bauturimeniu">d</div>
+      <div class="bauturi" id="bauturimeniu">
+        <div class="product-list-grid">
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Coca Cola</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img class="img_pizza" src="images/cola.jpg" alt="cocacola" />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="modal-descriere">
+                    <div class="container">
+                      <span class="info-dimensiune">0.5L</span
+                      ><span class="pretpizza">3.5 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">1.0L</span>
+                      <span class="pretpizza">5.5 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Fanta</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img class="img_pizza" src="images/fanta.jpg" alt="fanta" />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="modal-descriere">
+                    <div class="container">
+                      <span class="info-dimensiune">0.5L</span
+                      ><span class="pretpizza">3.5 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">1.0L</span>
+                      <span class="pretpizza">5.5 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Sprite</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/sprite.jpg"
+                  alt="chupachups"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="modal-descriere">
+                    <div class="container">
+                      <span class="info-dimensiune">0.5L</span
+                      ><span class="pretpizza">3.5 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                    <div class="container">
+                      <span class="info-dimensiune">1.0L</span>
+                      <span class="pretpizza">5.5 lei</span>
+                      <span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-group">
+            <div class="product-text">
+              <div class="product-title"><p>Chupa-Chups</p></div>
+            </div>
+            <div class="wrapper">
+              <div class="img_group_pizza">
+                <img
+                  class="img_pizza"
+                  src="images/chupachups.jpg"
+                  alt="chupachups"
+                />
+              </div>
+              <div class="overlay">
+                <div class="content">
+                  <div class="modal-descriere">
+                    <div class="container">
+                      <span class="info-dimensiune">345mL</span
+                      ><span class="pretpizza">4.5 lei</span
+                      ><span class="adaugaincos">
+                        <button class="shop-item-button finalcart">
+                          Adauga in cos
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-container-1">
+        <section class="container2 content-section">
+          <h2 class="section-header">CART</h2>
+          <a href="" id="close" class="close"></a>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0 lei</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">
+            PURCHASE
+          </button>
+        </section>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="menu-footer">
+        <div class="cell-footer last2">
+          <h3>Contact</h3>
+          Numar de telefon: 0712 345 678
+          <br />
+          Email: rocketpizza@gmail.com
+          <br />
+          Adresa: Calea Bucuresti nr 35
+        </div>
+
+        <div class="cell-footer last1">
+          <h3>Pizza Rocket</h3>
+          <p>Urmareste-ne pe <br />social media</p>
+        </div>
+
+        <div class="cell-footer last">
+          <h3>Descarca aplicatia</h3>
+          <a href=""><img src="images/play.png" /> <br /></a>
+          <a href=""><img src="images/appstore.png" /></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin:0;
     scroll-behavior: smooth;
@@ -49,6 +59,7 @@
 }
 .sectiunea-1-logo{
   width:fit-content;
+  margin-bottom:100px;
     display: flex;
     font-size:250%;
     color:rgb(218, 0, 0);
@@ -159,7 +170,7 @@
     align-items:center;
     justify-content: space-between;
     padding-left:50px;
-    padding-right:50px;
+    padding-right:30px;
 }
 .navbar{
     text-decoration: none;
@@ -198,13 +209,11 @@
     width:100%;
     display:block;
 }
-.product-title{
-    font-size:2.5vw;
-    display:flex;
-    justify-content: center;
-}
 .product-text{
     border-bottom: 4px solid black;
+    text-align:center;
+    width:100%;
+    font-size:2.5vw;
 }
 .pret{
     text-align: right;
@@ -232,7 +241,7 @@
     background-color: white;
     display: flex;
     flex-direction: row;
-    margin-top: 20vh;
+    margin-top: 10vh;
     border-radius: 20px;
     border:2px solid black;
     box-shadow:2px 2px 4px black;
@@ -253,61 +262,40 @@
 }
 .modal-descriere div{
     font-family: 'Montserrat', sans-serif;
-    margin-bottom:15px;
+}
+.modal-descriere div:not(.container){
+  margin-bottom: 15px;
+}
+.modal-descriere{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .container {
-  display:block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
+  margin-bottom:5px;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     border:3px solid rgb(148, 148, 148);
-    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
+    display:inline-flex;
+    justify-content: space-between;
   }
-  .container input:checked ~ .container{
-    background-color: green;
-  }
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  .checkmark {
-    position: absolute;
-    top: 1px;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-.container input:checked ~ .checkmark:after {
-  display: block;
+.container:hover{
+  box-shadow:0px 0px 10px black;
+  transition:0.5s;
 }
-.container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
+.info-dimensiune{
+  display:inline;
+  font-family: Raleway;
+}
+.pretpizza{
+  display:inline;
+  font-family: Raleway;
+  padding-left:35px;
+  color:red;
+}
+.adaugaincos{
+  display:inline;
+  font-family: Raleway;
 }
 .modal-image img{
     margin: 0px -120px 0px -120px;
@@ -336,10 +324,6 @@
     font-family:'Heebo', sans-serif;
     display:flex;
 }
-  .content span {
-    font-size: 24px;
-    display: block;
-  }
 .overlay {
     position: absolute;
     bottom: 0;
@@ -395,9 +379,6 @@
     flex-direction: column;
     white-space:nowrap;
 }
-.sectiunea-oferte{
-    height: 100vh;
-}
 .produse{
   border-top:0.2px solid black;
   padding-left:30px;
@@ -439,8 +420,292 @@
   border-radius: 10px;
   margin-left:30px;
   font-family: 'Montserrat', sans-serif;
+  cursor:pointer;
 }
 #cart:hover{
   color:white;
   background-color:red;
+}
+.finalcart{
+  float:right;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.5s;
+  font-family: Raleway;
+  font-size:100%;
+}
+.finalcart:hover{
+  background-color: greenyellow;
+  transition:0.5s;
+}
+.container2 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  font-family: "Booter - Zero Zero";
+  color: #777;
+  width:100%;
+}
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+  font-family: Raleway;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+  font-family: Raleway;
+}
+
+.cart-quantity {
+  width: 35%;
+  font-family: Raleway;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+  font-family: Raleway;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+  font-family: Raleway;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+  font-family: Raleway;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+  font-family: Raleway;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer;
+  font-family: Raleway;
+}
+
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2D9CDB;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #2D9CDB;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56CCF2;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  font-family: Raleway;
+}
+
+.btn-primary:hover {
+  background-color: #2D9CDB;
+}
+.content-section {
+  margin: 1em;
+}
+
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+#modal-1{
+  display:none;
+}
+.footer{
+  display:flex;
+  background-color:rgb(231, 231, 231);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top:100px;
+}
+.footer *, .footer2 *{
+  font-family: Raleway;
+}
+.menu-footer{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Raleway;
+}
+.cell-footer{
+  padding:1vw;
+  font-family: Raleway!important;
+  font-size: 1vw;
+}
+.footer img, .footer2 img{
+  width:10vw;
+}
+.footer2{
+    display:flex;
+    background-color:rgb(231, 231, 231);
+}
+.menu-footer{
+  width:100%;
+}
+@media only screen and (max-width: 1000px) {
+  .product-list-grid{
+    grid-template-columns: 1fr;   
+    margin-left: 22vw;
+    margin-right: 22vw;
+    transition: 0.5s;
+    margin-top: 200px;
+  }
+  .header_static{
+    font-size: 100%;
+  }
+  .product-text{
+    font-size:250%;
+  }
+  .produse{
+    font-size:300%;
+  }
+  .logo{
+    font-size:300%;
+  }
+  .buton-cos{
+    font-size:200%;
+    width:260px;
+  }
+  .cell-footer{
+    font-size: 100%;
+  }
+}
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 64px;
+  height: 64px;
+  background-color: red;
+  z-index: 60;
+  box-shadow: 2px 4px 4px black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.close:hover{
+  box-shadow: 4px 5px 10px black;
+  transition:0.5s;
+}
+.close:hover:before, .close:hover:after{
+  background-color: black;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 31px;
+  content: ' ';
+  height: 65px;
+  width: 2px;
+  background-color: rgb(111, 111, 111);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
